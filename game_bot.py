@@ -1,4 +1,6 @@
 from aiogram import Bot, Dispatcher, executor, types
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 
 TOKEN = "6241768567:AAGi9QmUr0oX5UIZCOQDbiE8KcQuEyf8Ehs"
 
@@ -12,10 +14,18 @@ async def start_handler(message: types.Message):
     user_full_name = message.from_user.full_name
     await message.reply(f"Добро пожаловать в игру, {user_full_name}")
 
+    markup = InlineKeyboardMarkup()
+    button = InlineKeyboardMarkup(text='ПОЛУЧИТЬ РОЛЬ', callback_data='butt_id')
+    markup.add(button)
 
-@dp.message_handler(commands=['role'])
-async def role_handler(message: types.Message):
-    await message.reply(f"ваша роль....")
+    await bot.send_message(message.chat.id, "Время выбрать роль", reply_markup=markup)
+
+
+@dp.callback_query_handler(lambda c: c.data == "butt_id")
+async def to_query(call: types.callback_query):
+    await bot.answer_callback_query(call.id)
+    await bot.send_message(call.message.chat.id, "ваша роль ляляля")
+
 
 if __name__ == '__main__':
     executor.start_polling(dp)
