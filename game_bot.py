@@ -13,5 +13,9 @@ async def start_handler(message: types.Message):
     await message.reply(f"Добро пожаловать в игру, {user_full_name}")
 
 
+@dp.message_handler(commands=['role'])
+async def role_handler(message: types.Message):
+    await message.reply(f"ваша роль....")
+
 if __name__ == '__main__':
     executor.start_polling(dp)
