@@ -17,6 +17,7 @@ all_backpack = ru.ALL_BACKPACK
 backpack = random.sample(all_backpack, 10)
 all_health = ru.ALL_HEALTH
 health = random.sample(all_health, 10)
+namee = []
 
 TOKEN = "6241768567:AAGi9QmUr0oX5UIZCOQDbiE8KcQuEyf8Ehs"
 
