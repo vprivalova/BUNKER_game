@@ -3,8 +3,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import random
 import ru_local as ru
 
-all_name = ru.ALL_NAME
-name = random.sample(all_name, 10)
+name = ru.ALL_NAME
 all_year = list(range(16, 51))
 year = random.sample(all_year, 10)
 all_profession = ru.ALL_PROFESSION

@@ -1,7 +1,5 @@
 ALL_NAME = ['Lillian Powell', 'Brenda Bowen', 'Joseph Johnston', 'Glenn Fisher', 'Christina Horton', 'Jessica Mitchell',
-            'Roger Clark', 'Daniel Cole', 'Stephen Clark', 'Betty Wright', 'James Moody', 'Anita Kelly', 'John Perry',
-            'Harry Santiago', 'Robert Brooks', 'Douglas Williams', 'Sherry Allen', 'Kathryn Ruiz', 'James Wood',
-            'Jerry Harper', 'Lisa Graham', 'Donald McCoy', 'Virgil Baker', 'Glenn Page', 'Rose Dunn']
+            'Roger Clark', 'Daniel Cole', 'Stephen Clark', 'Betty Wright']
 
 ALL_PROFESSION = ['имеет два незаконченных высших образования в сфере геологии, подрабатывает в детском саду',
                   'кандидат медицинских наук, работает хирургом в частной клинике 5 лет',
