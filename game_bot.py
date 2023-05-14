@@ -18,7 +18,7 @@ backpack = random.sample(all_backpack, 10)
 all_health = ru.ALL_HEALTH
 health = random.sample(all_health, 10)
 
-TOKEN = "6241768567:AAGi9QmUr0oX5UIZCOQDbiE8KcQuEyf8Ehs"
+TOKEN = "6241768567:AAHpYDBlU4kz06BgwUx9j92NzLbJ15GJtuw"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot=bot)
