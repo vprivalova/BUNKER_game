@@ -1,28 +1,21 @@
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import random
+import ru_local as ru
 
-all_name = ['Lillian Powell', 'Brenda Bowen', 'Joseph Johnston', 'Glenn Fisher', 'Christina Horton', 'Jessica Mitchell',
-            'Roger Clark', 'Daniel Cole', 'Stephen Clark', 'Betty Wright', 'James Moody', 'Anita Kelly', 'John Perry',
-            'Harry Santiago', 'Robert Brooks', 'Douglas Williams', 'Sherry Allen', 'Kathryn Ruiz', 'James Wood',
-            'Jerry Harper', 'Lisa Graham', 'Donald McCoy', 'Virgil Baker', 'Glenn Page', 'Rose Dunn']
+all_name = ru.ALL_NAME
 name = random.sample(all_name, 10)
 all_year = list(range(16, 51))
 year = random.sample(all_year, 10)
-all_profession = ['Cooker', 'Didgey', 'Housekeeper', 'Cooker', 'Didgey', 'Housekeeper', 'Cooker', 'Didgey',
-                  'Housekeeper', 'Cooker', 'Didgey', 'Housekeeper']
+all_profession = ru.ALL_PROFESSION
 profession = random.sample(all_profession, 10)
-all_hobby = ['something', 'something', 'something', 'something', 'something', 'something', 'something',
-             'something', 'something', 'something', 'something', 'something']
+all_hobby = ru.ALL_HOBBY
 hobby = random.sample(all_hobby, 10)
-all_phobias = ['something', 'something', 'something', 'something', 'something', 'something', 'something',
-               'something', 'something', 'something', 'something', 'something', 'something']
+all_phobias = ru.ALL_PHOBIAS
 phobias = random.sample(all_phobias, 10)
-all_backpack = ['something', 'something', 'something', 'something', 'something', 'something', 'something', 'something',
-                'something', 'something', 'something', 'something', 'something']
+all_backpack = ru.ALL_BACKPACK
 backpack = random.sample(all_backpack, 10)
-all_health = ['something', 'something', 'something', 'something', 'something', 'something', 'something', 'something',
-              'something', 'something', 'something', 'something', 'something']
+all_health = ru.ALL_HEALTH
 health = random.sample(all_health, 10)
 
 TOKEN = "6241768567:AAGi9QmUr0oX5UIZCOQDbiE8KcQuEyf8Ehs"
