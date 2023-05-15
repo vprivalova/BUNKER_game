@@ -1,3 +1,19 @@
+B_ROLE = "Время выбрать роль"
+VOTE_END = 'Выбор сделан'
+CONTINUE = 'Продолжаем'
+VOTE = 'По окнчании голосования нажмите здесь'
+GAME_END = 'Игра окончена'
+B_START = 'Добро пожаловать в бункер,'
+GET_ROLE = 'ПОЛУЧИТЬ РОЛЬ'
+GET_HOBBY = 'ПОЛУЧИТЬ ХОББИ'
+GET_PHOBIA = 'ПОЛУЧИТЬ ФОБИЮ'
+GET_BACKPACK = 'ПОЛУЧИТЬ ВЕЩЬ ИЗ РЮКЗАКА'
+GET_HEALTH = 'ПОЛУЧИТЬ ИНФОРМАЦИЮ О ЗДОРОВЬЕ'
+B_HOBBY = 'Настало время узнать ваше хобби'
+B_PHOBIA = 'Настало время узнать вашу фобию'
+B_BACKPACK = 'Настало время узнать что же у вас в рюкзаке'
+B_HEALTH = 'Настало время узнать какое у вас здоровье'
+
 ALL_NAME = ['Lillian Powell', 'Brenda Bowen', 'Joseph Johnston', 'Glenn Fisher', 'Christina Horton', 'Jessica Mitchell',
             'Roger Clark', 'Daniel Cole', 'Stephen Clark', 'Betty Wright']
 
