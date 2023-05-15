@@ -17,7 +17,7 @@ def showtime():
     for x in range(mytime, 0, -1):
         print(x)
         time.sleep(1)
-    print('Время вышло!')
+    print(ru.TIMEOVER)
 
 
 print(ru.HELLO)
@@ -36,7 +36,7 @@ else:
 b = input(ru.B_TEXT_1)
 
 if b == '+':
-    print(f'В бункере сейчас находятся: {listt}')
+    print(ru.INBUNKER, listt)
     print(ru.B_TEXT_2)
     q = input(ru.Q_TEXT_1)
     print(ru.TIME)
@@ -49,7 +49,7 @@ c = input(ru.KIK)
 
 if c in listt:
     listt.remove(c)
-    print(f'игрок {c} изгнан из бункера')
+    print(ru.DECISION, c)
 else:
     z = (random.sample(listt, 1))[0]
     listt.remove(z)
@@ -68,7 +68,7 @@ if d == '+':
     e = input(ru.KIK)
     if e in listt:
         listt.remove(e)
-        print(f'игрок {e} изгнан из бункера»')
+        print(ru.DECISION, e)
     else:
         z = (random.sample(listt, 1))[0]
         listt.remove(z)
@@ -89,7 +89,7 @@ if f == '+':
     g = input(ru.KIK)
     if g in listt:
         listt.remove(g)
-        print(f'игрок {g} изгнан из бункера»')
+        print(ru.DECISION, g)
     else:
         z = (random.sample(listt, 1))[0]
         listt.remove(z)
@@ -111,7 +111,7 @@ if h == '+':
     j = input(ru.KIK)
     if j in listt:
         listt.remove(j)
-        print(f'игрок {j} изгнан из бункера')
+        print(ru.DECISION, j)
     else:
         z = (random.sample(listt, 1))[0]
         listt.remove(z)
@@ -130,7 +130,7 @@ if m == '+':
     p = input(ru.KIK)
     if p in listt:
         listt.remove(p)
-        print(f'игрок {p} изгнан из бункера')
+        print(ru.DECISION, p)
         print(ru.END_1)
     else:
         z = (random.sample(listt, 1))[0]
@@ -140,5 +140,4 @@ if m == '+':
 else:
     print(ru.REM)
 
-print(listt)
 print(ru.THANK)
