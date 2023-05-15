@@ -27,7 +27,7 @@ dp = Dispatcher(bot=bot)
 async def start_handler(message: types.Message):
     user_id = message.from_user.id
     user_full_name = message.from_user.full_name
-    await message.reply(f"{ru.B_START}, {user_full_name}")
+    await message.reply(f"{ru.B_START} {user_full_name}")
 
     markup = InlineKeyboardMarkup()
     button = InlineKeyboardMarkup(text=ru.GET_ROLE, callback_data='butt_id')
