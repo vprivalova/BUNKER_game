@@ -1,3 +1,15 @@
+"""
+Khludina Ksenia 90
+Nizovtseva Anastasia 90
+Privalova Viktoria 90
+Fedotova Tatiana 90
+"""
+
+
+
+
+
+
 import time
 import random
 import subprocess
